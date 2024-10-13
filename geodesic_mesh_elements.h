@@ -182,7 +182,7 @@ public:
 		m_state = OUTSIDE;
 		m_incident_face = NULL;
 		m_saddle_or_boundary = false;
-		m_incident_point = NULL; 
+		m_incident_point = -1.0; 
 	};
 
 	~Vertex(){};
@@ -321,7 +321,7 @@ public:
 private:
 	double m_length;							//length of the edge
 };
-
+/*
 class SurfacePoint:public Point3D  //point on the surface of the mesh
 {
 public:
@@ -380,7 +380,7 @@ public:
 protected:
 	base_pointer m_p;			//could be face, vertex or edge pointer
 };
-
+*/
 // Face Member Functions
 
 inline edge_pointer Face::opposite_edge(vertex_pointer v)
